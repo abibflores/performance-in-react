@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Link, Route, Switch } from "wouter";
+import { Route, Switch } from "wouter";
 import './App.css';
 
 import Header from "./components/Header";

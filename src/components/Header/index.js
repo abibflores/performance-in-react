@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "wouter";
+
+import "./Header.css";
 
 const HeaderDesktop = () => (
     <div className="Header">
-        <img className="Header__Logo" src="/images/abibfloreslogo.jpg" alt="logo" title="logo abib flores" />
-        <nav>
+        <Link to="/" >
+            <img className="Header__Logo" src="/images/abibfloreslogo.jpg" alt="logo" title="logo abib flores" />
+        </Link>
+        <nav className="Header__Nav">
             <a href="https://www.abibflores.dev/">abib flores </a>
             <a href="https://web.dev/measure/">Web Dev</a>
             <a href="https://twitter.com/abibflores">My Twitter</a>
@@ -28,8 +33,10 @@ const HeaderMobile = () => {
             <button className="Header__Toogle" type="button" onClick={() => toogleMenu()}>{textMenu}</button>
             <div className={`Header__Container${classMenu}`}>
                 <div className="Header__Mobile">
-                    <img className="Header__Logo" src="/images/abibfloreslogo.jpg" alt="logo" title="logo abib flores" />
-                    <nav>
+                    <Link to="/" onClick={() => toogleMenu()}>
+                        <img className="Header__Logo" src="/images/abibfloreslogo.jpg" alt="logo" title="logo abib flores" />
+                    </Link>
+                    <nav className="Header__Mobile_Nav">
                         <a href="https://bit.ly/3eVMAzD">abib flores </a>
                         <a href="https://web.dev/measure/">Web Dev</a>
                         <a href="https://bit.ly/3fXIw3c">My Twitter</a>

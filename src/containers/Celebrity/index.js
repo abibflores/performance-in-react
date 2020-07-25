@@ -1,11 +1,10 @@
 import React from "react";
+import ListOfCard from "../../components/ListOfcard";
 
-const CelebrityPage = () => {
-    return (
-        <div>
-            Celebridades
-        </div>
-    );
-};
+const CelebrityPage = () => (
+    <div className="CelebrityPage">
+        <ListOfCard />
+    </div>
+);
 
 export default CelebrityPage;

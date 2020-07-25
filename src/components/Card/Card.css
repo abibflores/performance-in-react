@@ -1,0 +1,32 @@
+.Card__Container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #4A0575;
+    margin-bottom: 35px;
+    color: white;
+    animation: fadeIn 1s ease forwards;
+}
+
+.Card__Info {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 15px 0px;
+}
+
+.Card__Info span {
+    width: 270px;
+    margin: 0px 15px;
+    padding: 15px 0px 5px;
+    border-bottom: solid white 1px ;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

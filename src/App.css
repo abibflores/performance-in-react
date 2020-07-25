@@ -7,114 +7,31 @@
 }
 
 a {
-  color: white;
-}
-
-.Header {
-  width: 100%;
-  display: flex;
-  padding: 10px 0px;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.Header__Logo {
-  width: 40px;
-  border-radius: 50%;
-}
-
-.Header__Toogle {
-  width: 100%;
-  min-height: 30px;
-  position: relative;
-  background: #aefc5c;
-  color: #7207b5;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.Header__Container_Show, .Header__Container_Hidden {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  background: rgba(0,0,0,.5);
-  min-height: calc(100vh - 30px);
-  position: fixed;
-  transition: all 1s;
-}
-
-.Header__Mobile, nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 80vh;
-  width: 100%;
-  position: relative;
-}
-
-.Header__Container_Show {
-  top: 30px;
-  left: 0px;
-}
-
-.Header__Container_Hidden {
-  top: 30px;
-  left: -100%;
-}
-
-.Header__Logo {
-  width: 40px;
-  border-radius: 50%;
-  border: solid #aefc5c 2px;
-  margin: 30px;
-}
-
-footer, .SocialNetworks, .FirstChapters ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.GoogleMaps {
-  margin-bottom: 20px;
-}
-
-.Copyright a{
-  border: #aefc5c solid 5px;
-  border-radius: 25px;
-  min-width: 250px;
-  padding: 5px 10px;
-  margin: 20px 0px;
   color: #aefc5c;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
 }
 
-.HomePage {
+.HomePage, .CelebrityPage  {
   min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
 }
 
-@media only screen and (max-width: 1024px) {
-  footer {
-    flex-direction: column;
-  }
-  .FirstChapters ul {
-    flex-direction: column;
-  }
-  .FirstChapters ul li {
-    width: 100%;
-    padding: 10px 0px;
-  }
+.Celebrity__Container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
 }
+
+video {
+  margin: 20px 0px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

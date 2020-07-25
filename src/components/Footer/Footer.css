@@ -1,0 +1,47 @@
+footer {
+  background: #4A0575;
+}
+
+footer, .SocialNetworks, .FirstChapters ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    border-top: white 2px dashed;
+    padding: 20px 0px;
+    color: white;
+  }
+  
+  .GoogleMaps {
+    margin-bottom: 20px;
+  }
+  
+  .Link {
+    border: #aefc5c solid 3px;
+    border-radius: 25px;
+    min-width: 250px;
+    padding: 5px 10px;
+    margin: 20px 0px;
+    color: #aefc5c;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+@media only screen and (max-width: 1024px) {
+    footer {
+      flex-direction: column;
+    }
+    .FirstChapters ul {
+      flex-direction: column;
+    }
+    .FirstChapters ul li {
+      width: 100%;
+      padding: 10px 0px;
+    }
+  }
