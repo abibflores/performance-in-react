@@ -1,8 +1,10 @@
 .Gallery {
     width: 100%;
+    max-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .Gallery__Arrow_L, .Gallery__Arrow_R {
     width: 40px;
@@ -15,8 +17,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    z-index: 1;
 }
 
+.Gallery__Arrow_L {
+    left: 5px;
+}
+.Gallery__Arrow_R {
+    right: 5px;
+}
 .Gallery__Container, .Gallery__Image {
     width: 100%;
     max-width: 300px;

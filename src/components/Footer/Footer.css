@@ -3,18 +3,25 @@ footer {
 }
 
 footer, .SocialNetworks, .FirstChapters ul {
+    margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
     border-top: white 2px dashed;
     padding: 20px 0px;
     color: white;
   }
+
+  .FirstChapters ul, .SocialNetworks {
+    flex-direction: column;
+    max-width: 300px;
+  }
   
   .GoogleMaps {
     margin-bottom: 20px;
+    max-width: 300px;
   }
   
   .Link {
@@ -34,11 +41,14 @@ footer, .SocialNetworks, .FirstChapters ul {
 
 
 @media only screen and (max-width: 1024px) {
-    footer {
+    footer, .SocialNetworks  {
       flex-direction: column;
+      align-items: center;
     }
     .FirstChapters ul {
       flex-direction: column;
+      align-items: center;
+      width: 100%;
     }
     .FirstChapters ul li {
       width: 100%;
